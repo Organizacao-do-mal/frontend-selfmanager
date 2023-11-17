@@ -19,29 +19,37 @@ const mockdata = [
     icon: IconNotes,
     initiallyOpened: true,
     links: [
-      { label: 'Overview', link: '/' },
-      { label: 'Forecasts', link: '/' },
-      { label: 'Outlook', link: '/' },
-      { label: 'Real time', link: '/' },
+      { label: 'Visao geral', link: '/' },
+      { label: 'Metas', link: '/' },
+      { label: 'Relatorios', link: '/' },
     ],
   },
   {
     label: 'Saúde',
     icon: IconHeartbeat,
     links: [
-      { label: 'Upcoming releases', link: '/' },
-      { label: 'Previous releases', link: '/' },
-      { label: 'Releases schedule', link: '/' },
+      { label: 'Visao geral', link: '/' },
+      { label: 'Calculadoras', link: '/' },
+      { label: 'Monitoramento', link: '/' },
+      { label: 'Metas', link: '/' },
+      { label: 'Relatorios', link: '/' },
     ],
   },
-  { label: 'Desenvolvimento pessoal', icon: IconBrain },
+  { 
+    label: 'Desenvolvimento pessoal', 
+    icon: IconBrain, 
+    links: [
+      { label: 'Metas', link: '/' },
+      { label: 'Diario', link: '/' },
+    ]
+  },
   {
     label: 'Desenvolvimento profissional',
     icon: IconRoad,
     links: [
-      { label: 'Enable 2FA', link: '/' },
-      { label: 'Change password', link: '/' },
-      { label: 'Recovery codes', link: '/' },
+      { label: 'Carreira', link: '/' },
+      { label: 'Habilidades tecnicas', link: '/' },
+      { label: 'eventos', link: '/' },
     ],
   },
 ];
@@ -57,7 +65,7 @@ export function Navbar() {
           <Code fw={700}>v3.1.2</Code>
         </Group>
       </div>
-
+      
       <ScrollArea className={classes.links}>
         <div className={classes.linksInner}>{links}</div>
       </ScrollArea>

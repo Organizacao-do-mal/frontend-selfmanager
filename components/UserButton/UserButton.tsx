@@ -1,4 +1,4 @@
-import { UnstyledButton, Group, Avatar, Text, rem, ActionIcon, useMantineColorScheme } from '@mantine/core';
+import { UnstyledButton, Group, Avatar, Text, rem, ActionIcon, useMantineColorScheme, Button } from '@mantine/core';
 import { IconLogout, IconMoon, IconSun } from '@tabler/icons-react';
 import classes from './UserButton.module.css';
 
@@ -31,13 +31,13 @@ export function UserButton() {
           </Text>
         </div>
 
-        <ActionIcon>
+        <Button>
           {colorScheme === 'dark' ? (
             <IconMoon style={{ width: '24px', height: '24px' }} onClick={handleToggleMode}/>
           ) : (
             <IconSun style={{ width: '24px', height: '24px' }} onClick={handleToggleMode}/>
           )}
-        </ActionIcon>
+        </Button>
 
 
       </Group>
